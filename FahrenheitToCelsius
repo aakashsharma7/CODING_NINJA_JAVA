@@ -1,0 +1,21 @@
+import java.util.*;
+public class solution {
+	public static void printFahrenheitTable(int start, int end, int step) {
+       // your code starts here
+        int temp= 0;
+        for(int i = start; i <= end; i+= step){
+            temp = (int)((i - 32)* 0.5);
+            System.out.println(i+"\t"+temp);
+        }
+        return;
+    }
+        
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            int start =sc.nextInt();
+            int end =sc.nextInt();
+            int step =sc.nextInt();
+            
+            printFahrenheitTable(start, end, step);
+        }
+    }
