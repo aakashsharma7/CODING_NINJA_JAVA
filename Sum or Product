@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		 Scanner sc= new Scanner(System.in);
+        int N=sc.nextInt();
+        int C=sc.nextInt();
+        int output1=0;
+        int output2=1;
+        // System.out.println(2);
+        for (int i=1;i<=N;i++)
+        {        
+                if(C==1)
+                {output1+=i;
+                } else if(C==2)
+                {output2*=i;
+                } else
+                {
+                    System.out.println(-1);
+                    return;
+                }
+              
+           }
+         
+               if(C==1)
+                {System.out.println(output1);
+                }else if(C==2)
+                {System.out.println(output2);
+               
+        }
+    }
+}
