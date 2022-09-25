@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+        
+        	/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+		 Scanner sc= new Scanner(System.in);
+        int x=sc.nextInt();
+         int temp=0,y;
+        
+       
+        while(x!=0)
+        {  temp*=10;
+            y=x%10;
+           temp+=y;
+            x/=10;
+            
+        }
+         
+            
+            System.out.println(temp);    
+
+	}
+ }
