@@ -1,0 +1,40 @@
+import java.util.*;
+public class Solution {
+    
+    public static void arrange(int[] arr, int n) {
+    	//Your code goes here
+        int valuetoPrint = 1;
+        int startIndex = 0;
+        int endIndex = n-1;
+        //int startLimit = (n-1)/2;
+        //int endLimit = startLimit+1;
+        while(startIndex<=endIndex ){
+            arr[startIndex] = valuetoPrint;
+            valuetoPrint++;
+            if(endIndex == startIndex){
+                break;
+            }else{
+                arr[endIndex] = valuetoPrint;
+                valuetoPrint++;
+            }
+            startIndex++;
+            endIndex--;
+        }
+    }
+    // for printing the element of an array. 
+    public static void printArray(int[] arr){
+        for(int element : arr){
+            System.out.print(element + " ");
+        }
+        System.out.println();
+        
+    }
+    // main to print the element.
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        arrange(arr,n);
+        printArray(arr);
+    }
+}
