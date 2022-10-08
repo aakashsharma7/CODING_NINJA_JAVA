@@ -1,0 +1,17 @@
+public class Solution {
+
+	public static String removeConsecutiveDuplicates(String str) {
+		//Your code goes here
+        String x = "";
+        int temp = Integer.MIN_VALUE;
+        int len = str.length();
+        for(int i = 0; i < len; i++){
+            if(temp!=(int)str.charAt(i)){
+                x = x+str.charAt(i);
+                temp = (int)str.charAt(i);
+            }
+        }
+        return x;
+	}
+
+}
