@@ -1,6 +1,4 @@
-package Array;
-
-public class Spiral_Print {
+public class Solution {
     public static void spiralPrint(int m[][]){
 		//Your code goes here
         if(m.length ==0){
